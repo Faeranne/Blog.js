@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>{{Title}} - {{Tagline}}</title>
+		<link rel="stylesheet" href="{{mainStyle}}" />
+		<link rel="stylesheet" href="css/makeit.css" />
+		<link rel="stylesheet" href="css/bootstrap-responsive.css" />
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1 class='title'>{{Title}}</h1>
+			<h4 class='title'>{{Tagline}}</h2>
+		</div>
+		<div class="container">
+		<div class="row">
+			<div class="span3 bs-docs-sidebar">
+				<ul class="nav nav-list bs-docs-sidenav affix-top">
+					<li>Where to find me</li>
+					<li>
+						<a href="http://goo.gl/510u9A">Google+</a>
+					</li>
+					<li>
+						<a href="http://goo.gl/YpYPVV">Twitter</a>
+					</li>
+					<li>
+						<a href="http://goo.gl/YpYPVV">GitHub</a>
+					</li>
+				</ul>
+				<ul class="nav nav-list bs-docs-sidenav">
+					<li>Groups I'm involved in</li>
+					<li>
+						<a href="http://goo.gl/3p54V">Tulsa Web Devs</a>
+					</li>
+					<li>
+						<a href="http://goo.gl/2LfGVd">Tulsa Open Source Hardware</a>
+					</li>
+				</ul>
+			</div>
+			<div class="span9 subhead">
+				<section>
+					{{#posts}}
+					<div id="{{_id}}" class="post">
+						<a href="/?id={{_id}}"><H1>{{Title}}</H1></a>
+						<p>{{{Short}}}</p>
+					</div>
+					{{/posts}}
+				</section>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
